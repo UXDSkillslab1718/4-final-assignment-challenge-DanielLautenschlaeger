@@ -1,0 +1,159 @@
+/* Color Palette
+#2B061E - dark red
+#C0BCD1 - grey
+#FFEED6 - light yellow
+#AC9D46 - gold
+*/
+
+/* Global styles 
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Bad Script', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+h3 {
+    margin: 0;
+}
+
+a {
+    color: #AC9D46;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px; 
+    overflow: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.btn {
+    text-decoration: none;
+    background: #AC9D46;
+    color: white; 
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Header & Footer 
+------------------------------------*/
+header, footer {
+    background: #2B061E;
+    color: #C0BCD1;
+}
+/*header*/
+header {
+    padding-top: 50px;
+    position: relative;
+}
+.profile-img {
+    border-radius: 50%; 
+}
+header h1, header h2{
+    color: #FFEED6;
+    margin: 0;
+}
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*footer*/
+footer {
+    text-align: center; 
+}
+.content-info a {
+    padding: 10px;
+}
+
+/* Header & Footer 
+------------------------------------*/
+nav {
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Work Experience
+------------------------------------*/
+.work {
+    background: #FFEED6;
+}
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 30px;
+}
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+/* Education
+------------------------------------*/
+.education {
+    background: linear-gradient(rgba(192, 188, 209,1.0), rgba(192, 188, 209,0.7)), url(../images/studying.jpg) no-repeat fixed;
+    background-size: cover;
+}
+p + h3 {
+    margin-top: 30px;
+}
+
+/* Media Queries 
+------------------------------------*/
+@media (min-width: 900px) {
+    .col-narrow {
+    width: 30%;
+    float: left;
+}
+
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 30px;
+}
+}
+
+@media (max-width: 899px) {
+    header{
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+    }
+}
