@@ -91,6 +91,7 @@ header h1, header h2{
 /*footer*/
 footer {
     text-align: center; 
+    color: #FFEED6;
 }
 .content-info a {
     padding: 10px;
@@ -131,8 +132,9 @@ h3 ~ p {
 /* Education
 ------------------------------------*/
 .education {
-    background: linear-gradient(rgba(192, 188, 209,1.0), rgba(192, 188, 209,0.7)), url(../images/studying.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(140, 50, 100,0.9), rgba(140, 50, 100,0.65)), url(../images/studying.jpg) no-repeat fixed;
     background-size: cover;
+    color: #FFEED6;
 }
 p + h3 {
     margin-top: 30px;
