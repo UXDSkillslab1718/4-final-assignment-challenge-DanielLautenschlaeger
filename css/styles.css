@@ -140,6 +140,37 @@ p + h3 {
     margin-top: 30px;
 }
 
+/* Contact Form
+------------------------------------*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; 
+  border: 1px #AC9D46; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=sendmessage] {
+  background-color: #AC9D46;
+  color: white;
+  padding: 12px 3px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+
+.contactform {
+    text-align: center;
+    padding: 20px;
+}
+
 /* Media Queries 
 ------------------------------------*/
 @media (min-width: 900px) {
