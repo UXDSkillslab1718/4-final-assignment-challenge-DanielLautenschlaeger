@@ -37,8 +37,13 @@ h3 {
 a {
     color: #AC9D46;
 }
-a:hover {
+a:hover{
     text-decoration: none;
+    color: #FFEED6;
+}
+a.B{
+    text-decoration: none;
+    color: #FFEED6;
 }
 
 
@@ -54,6 +59,9 @@ a:hover {
     padding: 0px 20px; 
     overflow: hidden;
 }
+.welcomeText{
+    color:#FFEED6;
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -65,13 +73,22 @@ a:hover {
     padding: 10px;
     display: inline-block;
 }
+.btnLOGO {
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    background: #2B061E;
+    color: #AC9D46; 
+    padding: 6px;
+    display: inline-block;
+    position: fixed;
+}
 
 
 /* Header & Footer 
 ------------------------------------*/
 header, footer {
     background: #2B061E;
-    color: #C0BCD1;
 }
 /*header*/
 header {
@@ -86,6 +103,11 @@ header h1, header h2{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+.LOGO {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /*footer*/
@@ -140,6 +162,24 @@ p + h3 {
     margin-top: 30px;
 }
 
+/* Projects
+------------------------------------*/
+.projects {
+    background: #FFEED6;
+}
+h3 ~ p {
+    margin: 0;
+}
+.project-description {
+    margin-bottom: 30px;
+}
+.project-description p:first-of-type {
+    margin-top: 0;
+}
+.projectPic {
+    width: 375px;
+}
+
 /* Contact Form
 ------------------------------------*/
 /* Style inputs with type="text", select elements and textareas */
@@ -151,6 +191,7 @@ input[type=text], select, textarea {
   box-sizing: border-box; 
   margin-top: 6px; 
   margin-bottom: 16px; 
+  background-color: ghostwhite;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -198,6 +239,21 @@ input[type=sendmessage] {
     float: left;
     padding-left: 0px;
     margin-top: 100px;
+}
+}
+
+@media (min-width: 900px) {
+    .col-leftPROJECTS {
+    width: 45%;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.col-rightPROJECTS {
+    width: 55%;
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 }
 
