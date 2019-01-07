@@ -51,6 +51,15 @@ a.active{
     text-decoration: none;
     color: #FFEED6;
 }
+a.download:hover, a.designProcess:hover, a.sendMessage:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #9A8300;
+}
+a.link:hover{
+    text-decoration: none;
+    color: #FFEED6;
+}
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
@@ -155,7 +164,6 @@ header h1, header h2{
   background-color: #AC9D46;
   min-width: 185px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -166,7 +174,8 @@ header h1, header h2{
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #AC9D46
+    background-color: #9A8300;
+    color:white;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
