@@ -12,8 +12,21 @@
     <!-- // Intro -->
     <header id="about">
         <nav>
-            <a href="index.html">About Me</a>
-            <a href="myuxdprojects.html">My UXD Projects</a>
+            <div class="dropdown">
+              <a href="index.html" aboutlink>About</a>
+              <div class="dropdown-content">
+              <a href="index.html" dropdownLink>About Me</a>
+              <a href="index.html#work" dropdownLink>Experience</a>
+              <a href="index.html#education" dropdownLink>Education</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="myuxdprojects.html" projectslink>UXD Projects</a>
+              <div class="dropdown-content">
+              <a href="myuxdprojects.html" dropdownLink>My Projects</a>
+              <a href="myuxdprojects.html#designprocess" dropdownLink>Design Process</a>
+              </div>
+            </div>
             <a href="contact.html" class="active">Contact</a>
         </nav>
         

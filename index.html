@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Lautenschlaeger | About Me</title>
+    <title>Daniel Lautenschlaeger | About</title>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,9 +13,22 @@
     <header id="about">
         <a href="PDF%20files/resumeDL.pdf" class="btn download" download>Download CV </a>
         <nav>
-            <a href="index.html" class="active">About Me</a>
-            <a href="myuxdprojects.html">My UXD Projects</a>
-            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+              <a href="index.html" class="active" about1>About</a>
+              <div class="dropdown-content">
+                <a href="index.html" dropdownLink>About Me</a>
+                <a href="index.html#work" dropdownLink>Experience</a>
+                <a href="index.html#education" dropdownLink>Education</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="myuxdprojects.html" projectslink>UXD Projects</a>
+              <div class="dropdown-content">
+              <a href="myuxdprojects.html" dropdownLink>My Projects</a>
+              <a href="myuxdprojects.html#designprocess" dropdownLink>Design Process</a>
+              </div>
+            </div>
+            <a href="contact.html" contactlinks>Contact</a>
         </nav>
         
         <a href="index.html" class="btnLOGO LOGO" LOGO>Daniel Lautenschläger </a>
@@ -35,7 +48,7 @@
         <!-- // Work Experience -->
         <section id="work" class = "work">
             <div class="content-wrap">
-            <h2>My Experience</h2>
+            <h2>Experience</h2>
 
             <!-- Job 1 Details -->
             <div class="col-narrow">
@@ -140,8 +153,8 @@
             <p>Finished the first year of the vocational school programm</p>
             </div>
         </section>
-        <!-- // Projects -->
-        <section id="projects" class = "work">
+        <!-- //Footermessage -->
+        <section class = "work">
             <div class="content-wrapFooterAbout">
             <h1>Great to see you here!</h1>
             </div>
@@ -149,7 +162,7 @@
     </main>
     
     <!-- // Footer & contact -->
-    <footer id="contact">
+    <footer>
        <div class="content-wrap">
         
         <!-- Social media/websites/links. -->

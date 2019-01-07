@@ -37,7 +37,12 @@ h3 {
 a {
     color: #AC9D46;
 }
-a:hover{
+nav a:hover{
+    text-decoration: none;
+    color: #FFEED6;
+    background-color: #2B061E;
+}
+ a.LOGO:hover{
     text-decoration: none;
     color: #FFEED6;
     background-color: #2B061E;
@@ -138,6 +143,41 @@ header h1, header h2{
     position: fixed;
     top: 0;
     left: 22px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #AC9D46;
+  min-width: 185px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #AC9D46
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .active, .dropdown:hover > a {
+  background-color: #AC9D46;
+}
+.dropdown:hover > a {
+    color: white;
 }
 
 /*footer*/

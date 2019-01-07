@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Lautenschlaeger | My UXD Projects</title>
+    <title>Daniel Lautenschlaeger | UXD Projects</title>
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,8 +12,21 @@
     <!-- // Intro -->
     <header id="about">
         <nav>
-            <a href="index.html">About Me</a>
-            <a href="myuxdprojects.html" class="active">My UXD Projects</a>
+            <div class="dropdown">
+              <a href="index.html" aboutlink>About</a>
+              <div class="dropdown-content">
+              <a href="index.html" dropdownLink>About Me</a>
+              <a href="index.html#work" dropdownLink>Experience</a>
+              <a href="index.html#education" dropdownLink>Education</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="myuxdprojects.html" class="active" projectslink>UXD Projects</a>
+              <div class="dropdown-content">
+              <a href="myuxdprojects.html" dropdownLink>My Projects</a>
+              <a href="myuxdprojects.html#designprocess" dropdownLink>Design Process</a>
+              </div>
+            </div>
             <a href="contact.html">Contact</a>
         </nav>
         
@@ -25,7 +38,7 @@
         <!-- // Projects -->
         <section id="projects" class = "projects">
             <div class="content-wrapPROJECTS">
-            <h2>My UXD Projects</h2>
+            <h2>UXD Projects</h2>
 
             <!-- Project 1 Details -->
             <div class="col-leftPROJECTS">
@@ -116,7 +129,7 @@
             <h3>"Nothing is more important, than a well organized and structured Design Process"</h3>
               <p>I do care a lot about a high qualitative process, because I know that this is the key of every great and successful design. I am applying the d-school-design process, which is scientifically prooven one of the best existing design processes in the world.</p>
               <br/>
-             <p>To get a better impression of my actual work process, you can have a look at the outcomes of the different design phases of the "Beaches of The Hague"-Website:</p>
+             <p>To get a better impression of my actual work process, take a look at the outcomes of the different design phases of the "Beaches of The Hague"-Website:</p>
             </div>
               <img class="processIMG" vertical-align: middle; src="images/designprocess.png" alt="Design Process BTH-Website">
         </section>
